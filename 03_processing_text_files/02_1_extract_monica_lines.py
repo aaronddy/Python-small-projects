@@ -2,9 +2,6 @@ import os
 import re
 import codecs
 
-fhand = codecs.open('friends101.txt', 'r', 'utf-8')
-script101 = fhand.read()
-# print(type(script101), script101[:100])
 
 '''
 
@@ -14,6 +11,11 @@ findall : 특정 패턴을 문자열에서 모두 찾아 '리스트' 형태로 �
 (search, match문은 제대로 찾았는지 확인하는 절차가 따로 필요한 반면 findall은 찾으면 결과값이 빈 리스트[]로 출력)
 
 '''
+
+
+fhand = codecs.open('friends101.txt', 'r', 'utf-8')
+script101 = fhand.read()
+# print(type(script101), script101[:100])
 
 monicaLines = []                                          # 모니카 대사를 담을 빈 리스트 생성
 
@@ -44,4 +46,6 @@ print(item)
 f = open('monica_lines.txt', 'w', encoding='utf-8')
 f.write(item)
 f.close()
+
+
 
