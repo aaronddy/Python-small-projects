@@ -1,7 +1,7 @@
 'usecsv 모듈 만들어서 사용하기'
 
 
-import csv, os
+import csv, os, re
 
 def opencsv(file_name):
   
