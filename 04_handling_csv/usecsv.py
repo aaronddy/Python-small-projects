@@ -23,3 +23,17 @@ def writecsv(file_name, file_obj):
     csv_obj.writerows(file_obj)
 
 
+
+
+def switch(list_name):
+  
+  for i in list_name:
+    for j in i:
+      
+      try:
+        i[i.index(j)] = float(re.sub(',', '', j))
+        
+      except:
+        pass
+
+  return list_name
