@@ -1,4 +1,4 @@
-'opencsv()와 writecsv() 함수를 합친 usecsv 모듈 만들어서 사용하기'
+'usecsv 모듈 만들어서 사용하기'
 
 
 import csv, os
@@ -29,7 +29,6 @@ def switch(list_name):
   
   for i in list_name:
     for j in i:
-      
       try:
         i[i.index(j)] = float(re.sub(',', '', j))
         
