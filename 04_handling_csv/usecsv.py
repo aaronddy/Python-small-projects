@@ -15,6 +15,19 @@ def opencsv(file_name):
   return csv_list 
 
 
+def opencsv_cp949(file_name):
+  
+  fhand = open(file_name, 'r', encoding='CP949')
+  read_file = csv.reader(fhand)
+
+  csv_list = []
+  for lst in read_file:
+    csv_list.append(lst)
+
+  return csv_list 
+
+
+
 def writecsv(file_name, file_obj):
 
   with open(file_name, 'w', newline='', encoding='utf-8') as fhand:
