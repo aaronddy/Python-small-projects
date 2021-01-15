@@ -32,6 +32,7 @@ count = 0
 the_officetel = []
 print('내가 궁금한 실거래 조건')
 print("오피스텔 헤더:", officetel_info[0])
+the_officetel.append(officetel_info[0])
 
 for i in officetel_info:  
 
