@@ -1,4 +1,4 @@
-# simple_projects_python
+# Python-small-projects
 파이썬으로 11가지 작은 프로그래밍 실행해보기
 
 02_small_calculation
